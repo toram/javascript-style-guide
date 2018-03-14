@@ -1,45 +1,45 @@
-# Basat en: [# Airbnb JavaScript Style Guide() {](https://github.com/airbnb/javascript)
+# Basado en: [# Airbnb JavaScript Style Guide() {](https://github.com/airbnb/javascript)
 
 
-*Un enfoc raonable per JavaScript*
+*Un enfoque razonable para JavaScript*
 
 
-## <a name='TOC'>Taula de Contingut</a>
+## <a name='TOC'>Tabla de Contenidos</a>
 
-  1. [Tipus](#types)
-  1. [Objectes](#objects)
+  1. [Tipos](#types)
+  1. [Objectos](#objects)
   1. [Array](#arrays)
-  1. [Cadenes de Text](#strings)
-  1. [Funcions](#functions)
-  1. [Propietats](#properties)
+  1. [Cadenas de Texto](#strings)
+  1. [Funciones](#functions)
+  1. [Propiedades](#properties)
   1. [Variables](#variables)
   1. [Hoisting](#hoisting)
-  1. [Expresions condicionals i igualtat](#conditionals)
-  1. [Blocs](#blocks)
-  1. [Comentaris](#comments)
-  1. [Espais en blanc](#whitespace)
-  1. [Comes](#commas)
-  1. [Punts i comes](#semicolons)
-  1. [Casting de Tipus i os & Coerció](#type-coercion)
-  1. [Convencions de nomenclatura](#naming-conventions)
-  1. [Funcions d'Accés](#accessors)
-  1. [Constructors](#constructors)
-  1. [Events](#events)
-  1. [Móduls](#modules)
+  1. [Expresiones condicionales e igualdad](#conditionals)
+  1. [Bloques](#blocks)
+  1. [Comentarios](#comments)
+  1. [Espacios en blanco](#whitespace)
+  1. [Comas](#commas)
+  1. [Puntos y comas](#semicolons)
+  1. [Casting de Tipos i os & Coerción](#type-coercion)
+  1. [Convenciones de nomenclatura](#naming-conventions)
+  1. [Funciones de Acceso](#accessors)
+  1. [Constructores](#constructors)
+  1. [Eventos](#events)
+  1. [Módulos](#modules)
   1. [jQuery](#jquery)
-  1. [Compatibilitat amb ES5](#es5)
-  1. [Proves](#testing)
-  1. [Rendiment](#performance)
+  1. [Compatibilidad con ES5](#es5)
+  1. [Prueba](#testing)
+  1. [Rendimiento](#performance)
   1. [Recursos](#resources)
   1. [En la cancha](#in-the-wild)
-  1. [Traduccions](#translation)
-  1. [La guia de la Guia d'Estil JavaScript](#guide-guide)
-  1. [Col·laboradors](#contributors)
-  1. [Llicència](#license)
+  1. [Traducciones](#translation)
+  1. [La guia de la Guia de Estilo JavaScript](#guide-guide)
+  1. [Colaboradores](#contributors)
+  1. [Licencia](#license)
 
-## <a name='types'>Tipus</a>
+## <a name='types'>Tipos</a>
 
-  - **Primitius**: Quan accedeixes a un tipus primitiu, utilitzes directament el seu valor
+  - **Primitivos**: Cuando accedes a un tipo primitivo, utilizas directamente su valor
 
     + `string`
     + `number`
@@ -55,7 +55,7 @@
 
     console.log(foo, bar); // => 1, 9
     ```
-  - **Complex**: Quan accedeixes a un tipus compelx, utilitzes la referencia al seu valor.
+  - **Complejo**: Cuando accedes a un tipo complejo, utilizas la referencia a su valor.
 
     + `object`
     + `array`
@@ -70,11 +70,11 @@
     console.log(foo[0], bar[0]); // => 9, 9
     ```
 
-    **[[⬆ tornar a la Taula del Contingut](#TOC)**
+    **[[⬆ volver a la tabla de contenido](#TOC)**
 
-## <a name='objects'>Objectes</a>
+## <a name='objects'>Objetos</a>
 
-  - Utilitzeu la sintaxi literal per la creació d'objectes.
+  - Utilizar la sintaxi literal para la creación de objetos.
 
     ```javascript
     // malament
@@ -103,22 +103,22 @@
   - Usa sinónimos legibles en lugar de palabras reservadas cuando sean necesarias.
 
     ```javascript
-    // malament
+    // mal
     var superman = {
       class: 'alien'
     };
 
-    // malament
+    // mal
     var superman = {
       klass: 'alien'
     };
 
-    // bé
+    // bien
     var superman = {
       type: 'alien'
     };
     ```
-    **[[⬆ tornar a la Taula del Contingut](#TOC)**
+    **[[⬆ volver a la tabla de contenido](#TOC)**
 
 ## <a name='arrays'>Arreglos</a>
 
@@ -170,7 +170,7 @@
     }
     ```
 
-    **[[⬆ tornar a la Taula del Contingut](#TOC)**
+    **[[⬆ volver a la tabla de contenido](#TOC)**
 
 
 ## <a name='strings'>Cadenas de Texto</a>
@@ -254,7 +254,7 @@
     }
     ```
 
-    **[[⬆ tornar a la Taula del Contingut](#TOC)**
+    **[[⬆ volver a la tabla de contenido](#TOC)**
 
 
 ## <a name='functions'>Funciones</a>
@@ -312,7 +312,7 @@
     }
     ```
 
-    **[[⬆ tornar a la Taula del Contingut](#TOC)**
+    **[[⬆ volver a la tabla de contenido](#TOC)**
 
 
 
@@ -348,7 +348,7 @@
     var isJedi = getProp('jedi');
     ```
 
-    **[[⬆ tornar a la Taula del Contingut](#TOC)**
+    **[[⬆ volver a la tabla de contenido](#TOC)**
 
 
 ## <a name='variables'>Variables</a>
@@ -457,7 +457,7 @@
     }
     ```
 
-    **[[⬆ tornar a la Taula del Contingut](#TOC)**
+    **[[⬆ volver a la tabla de contenido](#TOC)**
 
 
 ## <a name='hoisting'>Hoisting</a>
@@ -547,7 +547,7 @@
 
   - Per més informació llegeix [JavaScript Scoping & Hoisting](http://www.adequatelygood.com/2010/2/JavaScript-Scoping-and-Hoisting) per  [Ben Cherry](http://www.adequatelygood.com/)
 
-    **[[⬆ tornar a la Taula del Contingut](#TOC)**
+    **[[⬆ volver a la tabla de contenido](#TOC)**
 
 
 
@@ -596,7 +596,7 @@
 
   - Para más información revisa [Truth Equality and JavaScript](http://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/#more-2108) por Angus Croll
 
-    **[[⬆ tornar a la Taula del Contingut](#TOC)**
+    **[[⬆ volver a la tabla de contenido](#TOC)**
 
 
 ## <a name='blocks'>Bloques</a>
@@ -625,7 +625,7 @@
     }
     ```
 
-    **[[⬆ tornar a la Taula del Contingut](#TOC)**
+    **[[⬆ volver a la tabla de contenido](#TOC)**
 
 
 ## <a name='comments'>Comentarios</a>
@@ -718,7 +718,7 @@
     }
   ```
 
-    **[[⬆ tornar a la Taula del Contingut](#TOC)**
+    **[[⬆ volver a la tabla de contenido](#TOC)**
 
 
 ## <a name='whitespace'>Espacios en blanco</a>
@@ -814,7 +814,7 @@
         .call(tron.led);
     ```
 
-    **[[⬆ tornar a la Taula del Contingut](#TOC)**
+    **[[⬆ volver a la tabla de contenido](#TOC)**
 
 ## <a name='commas'>Comas</a>
 
@@ -876,7 +876,7 @@
     ];
     ```
 
-    **[[⬆ tornar a la Taula del Contingut](#TOC)**
+    **[[⬆ volver a la tabla de contenido](#TOC)**
 
 
 ## <a name='semicolons'>Puntos y Comas</a>
@@ -903,7 +903,7 @@
     })();
     ```
 
-    **[[⬆ tornar a la Taula del Contingut](#TOC)**
+    **[[⬆ volver a la tabla de contenido](#TOC)**
 
 
 ## <a name='type-coercion'>Casting de Tipos & Coerción</a>
@@ -980,7 +980,7 @@
     var hasAge = !!age;
     ```
 
-    **[[⬆ tornar a la Taula del Contingut](#TOC)**
+    **[[⬆ volver a la tabla de contenido](#TOC)**
 
 
 ## <a name='naming-conventions'>Convenciones de nomenclatura</a>
@@ -1093,7 +1093,7 @@
     };
     ```
 
-    **[[⬆ tornar a la Taula del Contingut](#TOC)**
+    **[[⬆ volver a la tabla de contenido](#TOC)**
 
 
 ## <a name='accessors'>Funciones de Acceso</a>
@@ -1147,7 +1147,7 @@
     };
     ```
 
-    **[[⬆ tornar a la Taula del Contingut](#TOC)**
+    **[[⬆ volver a la tabla de contenido](#TOC)**
 
 
 ## <a name='constructors'>Constructores</a>
@@ -1232,7 +1232,7 @@
     };
     ```
 
-    **[[⬆ tornar a la Taula del Contingut](#TOC)**
+    **[[⬆ volver a la tabla de contenido](#TOC)**
 
 
 ## <a name='events'>Eventos</a>
@@ -1263,7 +1263,7 @@
     });
     ```
 
-  **[[⬆ tornar a la Taula del Contingut](#TOC)**
+  **[[⬆ volver a la tabla de contenido](#TOC)**
 
 
 ## <a name='modules'>Módulos</a>
@@ -1294,7 +1294,7 @@
     }(this);
     ```
 
-    **[[⬆ tornar a la Taula del Contingut](#TOC)**
+    **[[⬆ volver a la tabla de contenido](#TOC)**
 
 
 ## <a name='jquery'>jQuery</a>
@@ -1356,7 +1356,7 @@
     $sidebar.find('ul');
     ```
 
-    **[[⬆ tornar a la Taula del Contingut](#TOC)**
+    **[[⬆ volver a la tabla de contenido](#TOC)**
 
 
 ## <a name='es5'>Compatibilidad con ECMAScript 5</a>
@@ -1376,7 +1376,7 @@
     }
     ```
 
-    **[[⬆ tornar a la Taula del Contingut](#TOC)**
+    **[[⬆ volver a la tabla de contenido](#TOC)**
 
 
 ## <a name='performance'>Desempeño</a>
@@ -1390,7 +1390,7 @@
   - [Long String Concatenation](http://jsperf.com/ya-string-concat)
   - Loading...
 
-  **[[⬆ tornar a la Taula del Contingut](#TOC)**
+  **[[⬆ volver a la tabla de contenido](#TOC)**
 
 
 ## <a name='resources'>Recursos</a>
@@ -1446,7 +1446,7 @@
   - [Dustin Diaz](http://dustindiaz.com/)
   - [nettuts](http://net.tutsplus.com/?s=javascript)
 
-  **[[⬆ tornar a la Taula del Contingut](#TOC)**
+  **[[⬆ volver a la tabla de contenido](#TOC)**
 
 ## <a name='in-the-wild'>En la cancha</a>
 
@@ -1527,7 +1527,7 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-**[[⬆ tornar a la Taula del Contingut](#TOC)**
+**[[⬆ volver a la tabla de contenido](#TOC)**
 
 # };
 
